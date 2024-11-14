@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./index.css";
-const Card = (props) => {
+const Card = ({ character }) => {
   return (
     <>
       <div className="card">
-        <img src={props.character.image} />
-        <span className="legend"> {props.character.name} </span>
+        <img src={character.image} />
+        <span className="legend"> {character.name} </span>
       </div>
     </>
   );

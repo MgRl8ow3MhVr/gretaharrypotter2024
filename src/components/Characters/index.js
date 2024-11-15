@@ -42,8 +42,9 @@ const Characters = (props) => {
       {/* Nous devons ici utiliser une Ternaire car if n'est pas accessible dans du JSX. 
       Ici, si data existe (une fois qu'il a été mis à jour dans le useeffect, alors dérouler dans une liste .map) Mais si il est Null (au montage du component quand l'appel de data est en cours, afficher un message "en attente", ou une roue d'attente)
       */}
+
       {data ? (
-        data.map((character, i) => {
+        data.splice(0, 10).map((character, i) => {
           return <Card character={character} key={i} />;
         })
       ) : (

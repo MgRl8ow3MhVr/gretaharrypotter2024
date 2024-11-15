@@ -1,27 +1,24 @@
-
-
 .modale {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(1,1,1,0.8);
-    position: fixed;
-    top:0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(1, 1, 1, 0.8);
+  position: fixed;
+  top: 0;
+  color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .modale > div {
-    color: white;
+  color: white;
 }
-
 
 .modale > img {
-    width: 250px;
-    height: calc(250px*1.618);
-    object-fit: cover;
-    object-position: center;
+  width: 250px;
+  height: calc(250px * 1.618);
+  object-fit: cover;
+  object-position: center;
 }
-
